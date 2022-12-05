@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="bankinh" value=""><p>Bán kính</p>
+<button onclick="ketqua()">KẾT QUẢ</button>
+<h1 id="nhap">CHU VI</h1>
+<h1 id="nhap2">DIỆN TÍCH</h1>
+</body>
+<script>
+    function ketqua() {
+        let BK = +document.getElementById('bankinh').value;
+        let CV = +(BK*2)*3.14;
+        let DT = +(BK*BK)*3.14;
+        document.getElementById('nhap').innerHTML = 'Chu vi: ' +CV;
+        document.getElementById('nhap2').innerHTML = 'Diện tích: ' +DT;
+
+    }
+</script>
+</html>

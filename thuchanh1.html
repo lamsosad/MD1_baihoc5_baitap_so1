@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dai" value="">
+<input type="text" id="rong" value="">
+<button onclick="dientich()">ketqua</button>
+<h1 id="dientichcn">Kết quả</h1>
+</body>
+<script>
+    function dientich() {
+        let chieuDai = +document.getElementById('dai').value;
+        let chieuRong = +document.getElementById('rong').value;
+        let dienTich = +chieuDai * chieuRong;
+        document.getElementById('dientichcn').innerHTML = 'dien tich la:' + dienTich;
+    }
+</script>
+</html>

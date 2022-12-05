@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center; background-color: blanchedalmond">
+<input type="text" id="toan" value=""><p>Toán</p><br>
+<input type="text" id="ly" value=""><p>Lý</p><br>
+<input type="text" id="hoa" value=""><p>Hóa</p><br>
+<button onclick="ketqua()">Kết quả</button>
+<h1 id="tbm">Điểm trung bình</h1>
+<h1 id="tm">Điểm tổng</h1>
+</body>
+<script>
+    function ketqua() {
+        let TOAN = +document.getElementById('toan').value;
+        let LY = +document.getElementById('ly').value;
+        let HOA = +document.getElementById('hoa').value;
+        let TB = +(TOAN + LY + HOA)/3;
+        let TONG = +(TOAN + LY + HOA);
+        document.getElementById('tbm').innerHTML = 'ĐIỂM TRUNG BÌNH: ' +TB;
+        document.getElementById('tm').innerHTML = 'ĐIỂM TỔNG: ' +TONG;
+    }
+</script>
+</html>

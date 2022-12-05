@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập độ C</p><input type="text" id="doC" value=""><br>
+<button onclick="ketqua()">Độ F</button><br>
+<h1 id="nhapdoc">Độ F</h1>
+</body>
+<script>
+    function ketqua() {
+        let doc = +document.getElementById('doC').value;
+        let dof = +((9/5)*doc)+32
+        document.getElementById('nhapdoc').innerHTML = 'Độ F là:' +dof
+    }
+</script>
+</html>
